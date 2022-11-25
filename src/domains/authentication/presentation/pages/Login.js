@@ -7,7 +7,7 @@ const LoginPage = () => {
     <div className="maincontainer">
       <img src={bgimage} alt="backimg" />
       <div className="login-container">
-      <LoginForm title="App Studio" />
+      <LoginForm title="App" />
       </div>
     </div>
   );
