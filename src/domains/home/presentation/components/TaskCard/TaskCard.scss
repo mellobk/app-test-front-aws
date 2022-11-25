@@ -1,0 +1,78 @@
+@import "../../../../../shared/application/theme/colors.scss";
+
+.task-card-container {
+  width: 320px;
+  padding: 20px;
+  box-shadow: 1px 3px 10px rgb(0 0 0 / 30%);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  > .task-container {
+    display: flex;
+    gap: 30px;
+    > .task-container_left {
+      > .tasks-image {
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+    }
+
+    > .task-container_rigth {
+      width: 180px;
+      > .task-title {
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 5px;
+        font-size: 1.9rem;
+      }
+      > .task-description {
+        text-align: left;
+        height: 110px;
+        font-size: 1.9rem;
+        overflow-y: overlay;
+        word-break: break-word;
+      }
+    }
+  }
+
+  > .task-options {
+    margin-top: 15px;
+    > .task-date {
+      margin-top:5px;
+    }
+    >.task-finish{
+      font-weight: bold;
+      text-align: right;
+      margin-top:5px;
+    }
+
+    > .task-icons {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.image-disabled {
+  background-color: dimgrey;  
+  color: linen;
+  opacity: 1;
+  filter: grayscale(1);
+  
+}
+
+.tasks-container-disabled {
+  background: rgba(0, 0, 0, 0.1);;
+
+}

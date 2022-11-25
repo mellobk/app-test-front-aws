@@ -1,0 +1,51 @@
+@import '../../../application/theme/colors.scss';
+
+
+.table-container{
+  width: 100%;
+  >.title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+}
+.cursor{
+  cursor: pointer;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $primary;
+  >td{
+    color: $white ;
+  }
+  
+}
+
+
+th, td { /* cell */
+  padding:1rem;
+  font-size: 1.2rem;
+}
+
+th { /* header cell */
+  font-weight: 700;
+  text-align: left;
+  color: #272838;
+  border-bottom: 2px solid $primary;
+
+  position: sticky;
+  top: 0;
+  background-color: $white;
+}
+
+td { /* body cell */
+  color: $black;
+}

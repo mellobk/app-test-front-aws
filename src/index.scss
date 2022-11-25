@@ -1,0 +1,11 @@
+@import '~modern-normalize/modern-normalize.css';
+@import './shared/application/theme/colors.scss';
+@import './shared/application/theme/mixins.scss';
+@import './shared/application/theme/variables.scss';
+@import './shared/application/theme/theme.scss';
+
+ 
+*{
+    font-size: 1.7rem;
+    font-family: 'M PLUS Rounded 1c';
+}

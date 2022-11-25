@@ -1,0 +1,27 @@
+@import "../../../../../shared/application/theme/colors.scss";
+
+.personal-information-form {
+  width: 60%;
+
+  > .button__container {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  > .information-container {
+    display: flex;
+    gap: 30px;
+
+    > .left {
+      width: 50%;
+    }
+
+    > .rigth {
+      width: 50%;
+    }
+  }
+}

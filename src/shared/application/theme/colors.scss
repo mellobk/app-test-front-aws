@@ -1,0 +1,37 @@
+@import './mixins.scss';
+
+$primary: #7D81E0;
+$secondary: #0b1d2e;
+$success: #9bddbf;
+$info: #d3dcfc;
+$warning: #fff1db;
+$error: #e30042;
+$black: #1f1f1f;
+$white: #ffffff;
+$grey: hsl(0, 0%, 94%);
+$bg-loging: #e7eaf2;
+$bg-main: #212528;
+$bg-button: #281d61;
+
+$gray: #717171;
+$gray-secondary: #979797;
+$gray-tertiary: #ccc;
+$gray-divider: #c8c8c8;
+$gray-quaternary: #6d7782;
+$gray-background: #e5e5e5;
+$gray-quaternary: #3c4a58;
+$gray-quither: #f0f0f0;
+$gray-six: #c4c4c4;
+$gray-sevenary: #f3f3f3;
+$gray-eightary: #666666;
+
+$alert-icon-bg: #a7b8f9;
+$alert-text-bg: #1d3ec1;
+$bg-green: #36bb7e;
+
+$fontColor: $secondary;
+$bgBody: #e7eaf2;
+
+@include key-value-color('color', 'color');
+@include key-value-color('bg', 'background-color');
+@include key-value-color('border', 'border-color');

@@ -1,0 +1,30 @@
+@import "../../../../../shared/application/theme/colors.scss";
+
+
+.task-information-form{
+	width: 100%;
+  gap: 10px;
+  
+
+	>.button__container{
+		margin-bottom: 10px;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+
+	}
+
+	>.information-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+
+		>.task-information{
+		width:100%;
+		}
+
+	}
+}

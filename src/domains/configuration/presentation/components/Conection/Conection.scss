@@ -1,0 +1,19 @@
+.conection-configuration-container {
+    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    
+  > .button-container {
+    > .title {
+      font-weight: 400;
+      font-size: 3rem;
+    }
+    > .button {
+      width: 148px !important;
+      height: 43px !important;
+      font-weight: 200;
+      font-size: 2.5rem;
+    }
+  }
+}

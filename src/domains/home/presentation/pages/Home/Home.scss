@@ -1,0 +1,21 @@
+@import '../../../../../shared/application/theme/colors.scss';
+
+.dashboard-tasks-container{
+	
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px
+;
+}
+
+.tasks-button{
+	position: fixed;
+	right: 3rem;
+    bottom: 3rem;
+}
+
+.task-loader{
+    margin-top: 50px;
+}

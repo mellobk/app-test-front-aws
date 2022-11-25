@@ -1,0 +1,13 @@
+@import '../../../../shared/application/theme/colors.scss';
+
+.configuration-container {
+	height: 100%;
+
+	> .payment-conection {
+		display: grid;
+		grid-auto-flow: column;
+		column-gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+
+	}
+}

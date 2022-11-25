@@ -1,0 +1,141 @@
+@import "../../../../../shared/application/theme/colors.scss";
+@import "../../../../../shared/application/theme/theme.scss";
+
+.personalization-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  height: 391px;
+  background: white;
+  border-radius: 5px;
+  align-items: center;
+
+  > .title {
+    width: 98%;
+    text-align: left;
+    margin: 3rem 0 2rem 0;
+    font-size: 3rem;
+  }
+
+  > .configuration-logo-colors {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    height: inherit;
+    background: white;
+    border-radius: 5px;
+    align-items: center;
+
+    > .color-picker-container {
+      width: 60%;
+      display: flex;
+      margin-right: 5rem;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+
+      > .title {
+        text-align: left;
+      }
+      > .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        > .react-colorful {
+          width: 100%;
+
+          > .react-colorful__saturation {
+            border-bottom: none;
+            border-radius: 5px;
+          }
+
+          > .react-colorful__last-control {
+            border-radius: 5px;
+            margin-top: 2rem;
+          }
+        }
+        > .colors-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 1rem;
+
+          > .colors-hexa-container {
+            display: flex;
+            margin: 0.5rem 0;
+            > .colors {
+              width: 61px;
+              height: 61px;
+              border-radius: 5px;
+            }
+
+            > .colors-hexa-text {
+              margin-left: 1rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+
+    > .logo-cropper-container {
+      display: flex;
+      width: 40%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+
+      > .title {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.project-logo-upload {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  >.button{
+    margin-top: 15px;
+  }
+
+  > .logo {
+    width: 227px;
+    height: 227px;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    > img {
+      margin-top: -2px;
+      margin-left: -2px;
+      width: 102%;
+      height: 102%;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+
+  > .button {
+    > .image_loader {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../../application/theme/animations.scss';
+
+.button-container {
+  > .title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+
+.button-loader{
+  animation-name: spin;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}

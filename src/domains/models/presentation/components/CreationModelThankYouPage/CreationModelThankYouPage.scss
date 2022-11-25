@@ -1,0 +1,16 @@
+@import "../../../../../shared/application/theme/colors.scss";
+
+.than-you-componnet-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  >.loader-title {
+    font-size: 2.5rem;
+    font-weight:700;
+  }
+  >.button{
+    margin-top:20px;
+  }
+}

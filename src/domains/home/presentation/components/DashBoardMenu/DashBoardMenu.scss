@@ -1,0 +1,27 @@
+@import '../../../../../shared/application/theme/colors.scss';
+
+.dashboard-menu-container {
+	display: flex;
+    align-items: center;
+    border-width: thin;
+    border-top-color: transparent;
+    border-style: solid;
+    border-bottom-color: rgba(0, 0, 0, .2);
+    border-left-color: transparent;
+    border-right-color: transparent;
+
+	>.items-container{
+		display: flex;
+		width: 100%;
+		padding: 0 20px;
+	   gap: 20px;
+	}
+}
+.dashboard-item{
+    a{
+
+        cursor: default;
+        text-decoration: none;
+        color: black;
+    }
+}

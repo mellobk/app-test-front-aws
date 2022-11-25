@@ -1,0 +1,301 @@
+@import '../../../../../shared/application/theme/colors.scss';
+@import '../../../../../shared/application/theme/animations.scss';
+
+.maincontainer {
+	position: relative;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+>.two-factor-auth__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 82px;
+  }
+  
+  .two-factor-auth__logo {
+	padding: 0 24px;
+  }
+  
+  .two-factor-auth__logo path {
+	fill: #fff;
+  }
+  
+  .two-factor-auth__logo--electrolux {
+	width: 122px;
+  }
+  
+  .two-factor-auth__logo--aeg {
+	width: 54px;
+  }
+  
+  .two-factor-auth__logo--zanussi {
+	width: 70px;
+  }
+  
+  .two-factor-auth__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	min-height: calc(100vh - 82px);
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+  }
+  
+  .two-factor-auth__content {
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 30px;
+	background: #fff;
+	width: 100%;
+	max-width: 360px;
+	margin-bottom: 30px;
+	text-align: center;
+  }
+  
+  .two-factor-auth__content--wide {
+	max-width: 600px;
+  }
+  
+  .two-factor-auth__title {
+	margin-bottom: 30px;
+	max-width: 300px;
+  }
+  
+  .two-factor-auth__error {
+	font-size: 12px;
+	color: #f04a3a;
+	margin: 20px 0;
+  }
+  
+  .form-field {
+	position: relative;
+	margin-bottom: 30px;
+  }
+  
+  .form-field label {
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 6px;
+	color: var(--main-color);
+  }
+  
+  .form-field input[type='text'],
+  .form-field input[type='password'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	padding: 13px 15px;
+	width: 100%;
+	border: 1px solid #cbcfd2;
+	word-break: normal;
+	font-size: 14px;
+	color: var(--main-color);
+	min-height: 52px;
+  }
+  
+  .form-field input[type='text']:focus,
+  .form-field input[type='password']:focus {
+	outline: 0;
+	border-bottom: 2px solid var(--main-color);
+  }
+  
+  .form-field-validation-error {
+	display: none;
+	position: absolute;
+	bottom: -20px;
+	font-size: 12px;
+	color: #f04a3a;
+  }
+  
+  .form-field-error .form-field-validation-error {
+	display: block;
+  }
+  
+  .form-field-error input {
+	background-color: #fdeceb;
+	border-color: #cbcfd2;
+  }
+  
+  .two-factor-auth__auth-code .form-field-validation-error {
+	left: 55px;
+  }
+  
+  .btn {
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: var(--main-color);
+	border: 2px solid var(--main-color);
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Semibold', sans-serif;
+	padding: 9px 26px;
+	min-height: 50px;
+	text-align: center;
+	line-height: 28px;
+	transition: all .2s;
+  }
+  
+  .btn-default {
+	background-color: #fff;
+	border: 2px solid var(--main-color);
+	color: var(--main-color);
+  }
+  
+  .btn:hover {
+	background-color: #1e3359;
+	border-color: #1e3359;
+	color: #fff;
+  }
+  
+  .btn:disabled {
+	background-color: #eaeef2;
+	border: 2px solid #eaeef2;
+	color: #adb9c3;
+  }
+  
+  .two-factor-auth__buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: center;
+	margin-top: 30px;
+  }
+  
+  .two-factor-auth__buttons .btn {
+	width: calc(50% - 15px);
+  }
+  
+  .two-factor-auth__toggle {
+	font-size: 14px;
+	text-align: center;
+	color: var(--main-color);
+  }
+  
+  .two-factor-auth__toggle a {
+	text-decoration: none;
+	margin-top: 24px;
+	display: block;
+	color: var(--main-color);
+  }
+  
+  .two-factor-auth__toggle a span {
+	font-family: 'Regular', sans-serif;
+	display: block;
+  }
+  
+  .two-factor-auth__toggle .two-factor-auth__toggle-content {
+	display: none;
+	margin-top: 20px;
+  }
+  
+  .two-factor-auth__toggle.is-visible .two-factor-auth__toggle-content {
+	display: block;
+  }
+  
+  .two-factor-auth__toggle.is-visible .two-factor-auth__toggle-btn--hide {
+	display: none;
+  }
+  
+  .two-factor-auth__toggle-content--left-align {
+	text-align: left;
+  }
+  
+  .two-factor-auth__qr {
+	margin: 30px 0 20px;
+	text-align: center;
+  }
+  
+  .two-factor-auth__generated-code {
+	margin: 6px 0 0;
+	padding: 16px 18px;
+	border: solid 1px #cbcfd2;
+  }
+  
+  .two-factor-auth__auth-code {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 80px;
+	margin: 30px 0 0;
+  }
+  
+  .two-factor-auth__auth-code::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 16px;
+	height: 3px;
+	background: #cbcfd2;
+  }
+  
+  .two-factor-auth__auth-code input {
+	width: 64px;
+	height: 80px;
+	border: 1px solid #cbcfd2;
+	border-right: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Regular', sans-serif;
+	color: var(--main-color);
+	font-size: 60px;
+	line-height: 80px;
+  }
+  
+  .two-factor-auth__auth-code input:nth-child(3),
+  .two-factor-auth__auth-code input:nth-child(6) {
+	border-right: 1px solid #cbcfd2;
+  }
+  
+  .two-factor-auth__auth-code input:nth-child(3) {
+	margin-right: 18px;
+  }
+  
+  .two-factor-auth__auth-code input:nth-child(4) {
+	margin-left: 18px;
+  }
+  
+  .two-factor-auth__auth-code input:focus {
+	outline: none;
+  }
+  
+}
