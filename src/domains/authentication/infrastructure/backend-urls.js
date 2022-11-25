@@ -1,7 +1,6 @@
-import { NODE_ENV, URL_PROD } from "../../../shared/application/constants/env";
+import {URL_PROD } from "../../../shared/application/constants/env";
 
-const urlBase =
-  NODE_ENV === "development" ? "http://localhost:4000/api/auth/" : URL_PROD;
+const urlBase = `${URL_PROD}/api/auth/`
 
 // User details
 export const urlUpdateDetailsInformation = (
